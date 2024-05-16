@@ -1,0 +1,309 @@
+@font-face {
+  font-family: "Speltale";
+  src: url("assets/SpeltaleFont-Demo-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url("https://fonts.cdnfonts.com/css/pp-neue-montreal");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.hero-home {
+  position: relative;
+  background-color: #101010;
+  width: 100svw;
+  height: 100svh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  background-color: rgb(112, 26, 117);
+  background-image: radial-gradient(
+      at 0.28% 65.33%,
+      rgb(17, 24, 39) 0,
+      transparent 97%
+    ),
+    radial-gradient(at 10.01% 100.67%, rgb(17, 24, 39) 0, transparent 67%),
+    radial-gradient(at 103.26% -3%, rgb(244, 114, 182) 0, transparent 65%),
+    radial-gradient(at 61% 5%, rgb(168, 85, 247) 0, transparent 70%),
+    radial-gradient(at 61.34% 74.17%, rgb(134, 25, 143) 0, transparent 71%),
+    radial-gradient(at 13.88% 21.67%, rgb(88, 28, 135) 0, transparent 100%);
+}
+
+.BackgroundGridHome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.GridHome {
+  width: 100%;
+  height: 100%;
+  opacity: 0.2;
+}
+
+p {
+  font-family: "PP Neue Montreal", sans-serif;
+  color: #f05aa1;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: 0.01rem;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: screen;
+}
+
+h1 {
+  color: #f05aa1;
+  font-family: Speltale;
+  font-size: 150px;
+  font-weight: 500;
+  line-height: 150px;
+  letter-spacing: 0.05rem;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Credits {
+  position: absolute;
+  top: 5vh;
+}
+
+.Info {
+  position: absolute;
+  top: 95vh;
+}
+
+.Episode {
+  position: absolute;
+  margin-left: 480px;
+  top: 52vh;
+}
+.GlassCircle {
+  cursor: pointer;
+  transform-origin: center;
+  display: inline-block;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  border-radius: 50%;
+  box-shadow: 0 8px 32px 0 rgba(32, 26, 35, 0.4),
+    inset -20px -10px 100px rgba(27, 2, 78, 0.3),
+    inset 5px 10px 10px rgba(255, 255, 255, 0.9),
+    inset -20px -5px 10px rgba(67, 67, 67, 0.2);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  transform-origin: center;
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Orbit*/
+
+.wrap {
+  margin: 0 auto;
+  line-height: 6rem;
+  text-align: center;
+}
+
+.loader {
+  position: absolute;
+  margin: 0 auto 3rem auto;
+  overflow: hidden;
+}
+
+.loader > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.orbit {
+  height: 21rem;
+  width: 21rem;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  overflow: visible;
+  border-radius: 50%;
+}
+
+.orbit > div {
+  top: 2.5rem;
+  left: 2.5rem;
+  font-size: 1rem;
+  height: 15rem;
+  width: 15rem;
+  transform-origin: center center;
+}
+
+.orbit > div::before {
+  position: absolute;
+  left: calc(50% - 0.5em);
+  display: block;
+  content: "";
+  height: 1em;
+  width: 1em;
+  border-radius: 50%;
+  transform: scale(1);
+}
+
+.orbit > div:nth-child(1)::before {
+  background-color: #f05aa1;
+  mix-blend-mode: screen;
+}
+.orbit > div:nth-child(2)::before {
+  background-color: #a25af0;
+  mix-blend-mode: screen;
+}
+
+.orbit > div:nth-child(3)::before {
+  background-color: #5aa5f0;
+  mix-blend-mode: screen;
+}
+
+.orbit > div:nth-child(4)::before {
+  background-color: #f05a89;
+  mix-blend-mode: screen;
+}
+
+.go .loader.orbit > div {
+  animation: loading-orbit 6s infinite linear;
+}
+
+.go .loader.orbit > div::before {
+  animation: loading-orbit-before 2s infinite ease-in-out;
+}
+
+.loader.orbit > div:nth-child(1) {
+  animation-delay: 0s;
+}
+.loader.orbit > div:nth-child(2) {
+  animation-delay: -0.75s;
+}
+.loader.orbit > div:nth-child(3) {
+  animation-delay: -1.5s;
+}
+.loader.orbit > div:nth-child(4) {
+  animation-delay: -2.25s;
+}
+
+.loader.orbit > div:nth-child(1)::before {
+  animation-delay: 0s;
+}
+.loader.orbit > div:nth-child(2)::before {
+  animation-delay: -0.5s;
+}
+.loader.orbit > div:nth-child(3)::before {
+  animation-delay: -1s;
+}
+.loader.orbit > div:nth-child(4)::before {
+  animation-delay: -1.5s;
+}
+
+@keyframes loading-orbit {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-orbit-before {
+  0% {
+    height: 1em;
+    width: 1em;
+    transform: translate3d(0, 0, 0);
+    z-index: 5;
+  }
+  5% {
+    height: 1.25em;
+    width: 1.25em;
+  }
+  25% {
+    height: 2em;
+    width: 2em;
+    z-index: 10;
+  }
+  50% {
+    transform: translate3d(1rem, 15rem, 0);
+    z-index: 0;
+    height: 1em;
+    width: 1em;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    z-index: 0;
+    height: 1em;
+    width: 1em;
+  }
+}
+
+.viewport-child-child {
+  width: 500px;
+  height: 300px;
+  float: left;
+  object-fit: cover;
+  gap: 100px;
+}
+
+.HeroImage {
+  border-radius: 32px; /* Rounded corners */
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 0;
+  filter: drop-shadow(30px 30px 100px rgb(25, 5, 71));
+  animation: fadeinLoad 10s ease 1s forwards; /* Added 'forwards' to maintain final state */
+  opacity: 0; /* Start with opacity 0 */
+}
+
+@keyframes fadeinLoad {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.HeroImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: inherit;
+}
