@@ -3,70 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Viewport Drag Test</title>
+    <title>Viewport Test</title>
     <link rel="stylesheet" href="style.css" />
-    <meta name="view-transition" content="same-origin" />
   </head>
   <body>
-    <h1 class="HeroTilt show-on-desktop hide-on-mobile">The Lobster</h1>
-    <div class="hero-home">
-      <div class="viewport">
-        <div class="viewport-child">
-          <div class="HeroImage HeroImage1">
-            <video
-              src="assets/clinic.mp4"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-          </div>
-          <div class="HeroImage HeroImage2">
-            <video
-              src="assets/dance.mp4"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-          </div>
-          <div class="HeroImage HeroImage3">
-            <video
-              src="assets/wedding.mp4"
-              autoplay
-              loop
-              muted
-              playsinline
-            ></video>
-          </div>
-          <div class="HeroImage HeroImage4">
-            <video src="assets/car.mp4" autoplay loop muted playsinline></video>
-          </div>
-          <div class="HeroImage HeroImage5">
-            <img src="assets/review.png" alt="Emily St. James" />
-          </div>
-          <div class="HeroImage HeroImage6">
-            <img src="assets/review-chiara.png" alt="Review Chiara" />
-          </div>
-          <div class="HeroImage HeroImage7">
-            <img src="assets/booring.png" alt="Get Your '80s Groove On" />
-          </div>
-          <div class="GlassCircle"></div>
-        </div>
+    <div class="viewport">
+      <div class="viewport-child">
+        <div class="viewport-child-child viewport-child-child aspect1">1</div>
+        <div class="viewport-child-child viewport-child-child aspect2">2</div>
+        <div class="viewport-child-child viewport-child-child aspect3">3</div>
+        <div class="viewport-child-child viewport-child-child aspect4">4</div>
+        <div class="viewport-child-child viewport-child-child aspect5">5</div>
       </div>
     </div>
-    <img
-      id="dragMeImage"
-      src="assets/DragMe.png"
-      alt="Drag Me"
-      style="
-        display: none;
-        position: fixed;
-        pointer-events: none;
-        z-index: 1000;
-      "
-    />
-    <script src="home.js"></script>
     <script src="viewport.js"></script>
   </body>
 </html>
