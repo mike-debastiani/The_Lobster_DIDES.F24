@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Blob Video Masks</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="video-container" data-mask="1">
+      <video
+        id="video1"
+        src="assets/Frau_Boden_Schmerz_quadrat.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+      <svg id="maskSvg1" class="mask-svg">
+        <defs>
+          <clipPath id="svgMask1">
+            <path
+              id="morphPath1"
+              d="M422.702 3.98099C340.586 -19.0891 188.533 63.1687 119.818 120.553C-169.608 362.255 130.794 506.314 333.05 562.593C535.307 618.873 562.48 491.403 574.571 302.881C586.265 120.553 525.346 32.8186 422.702 3.98099Z"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="video-container" data-mask="2">
+      <video
+        id="video2"
+        src="assets/Blut_Fuss_quadrat.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+      <svg id="maskSvg2" class="mask-svg">
+        <defs>
+          <clipPath id="svgMask2">
+            <path
+              id="morphPath2"
+              d="M420.655 7.89298C312.808 -20.7997 96.1289 38.9179 38.6261 147.77C-75.6994 364.188 86.287 531.964 288.553 587.736C490.82 643.508 587.424 512.968 599.516 326.148C611.21 145.466 536.731 38.775 420.655 7.89298Z"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <div class="video-container" data-mask="3">
+      <video
+        id="video3"
+        src="assets/Hotel_Transformationroom_quadrat.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+      <svg id="maskSvg3" class="mask-svg">
+        <defs>
+          <clipPath id="svgMask3">
+            <path
+              id="morphPath3"
+              d="M450.152 4.61463C361.897 -18.1676 238.201 53.2117 164.349 109.88C-146.716 348.567 42.394 532.454 259.772 588.032C477.149 643.61 585.645 502.284 598.639 316.114C611.207 136.061 560.47 33.0925 450.152 4.61463Z"
+            />
+          </clipPath>
+        </defs>
+      </svg>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
