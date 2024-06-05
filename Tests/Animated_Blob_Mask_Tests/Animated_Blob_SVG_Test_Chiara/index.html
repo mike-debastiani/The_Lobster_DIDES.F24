@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Video mit animierter SVG-Maske</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="video-container">
+      <svg viewBox="0 0 800 800" class="svg-mask">
+        <defs>
+          <mask id="mask" x="0" y="0" width="800" height="800">
+            <path
+              id="blob"
+              fill="white"
+              d="M496 4.5C401.2 -20.3 217.656 85.9054 138.327 147.592C-195.808 407.419 150.998 562.28 384.498 622.78C617.998 683.28 649.368 546.251 663.327 343.593C676.827 147.592 614.5 35.5 496 4.5Z"
+              style="stroke-linejoin: round; stroke-linecap: round"
+            />
+          </mask>
+        </defs>
+        <rect width="800" height="800" fill="black" mask="url(#mask)" />
+      </svg>
+      <video
+        class="video"
+        src="assets/Frau_Boden_tot_filesize_reduced.mp4"
+        autoplay
+        loop
+        muted
+      ></video>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

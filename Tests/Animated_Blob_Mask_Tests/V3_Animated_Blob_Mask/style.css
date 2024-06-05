@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f1e9;
+}
+
+.video-container {
+  width: 30vw;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-mask="1"] video {
+  clip-path: url(#svgMask1);
+}
+
+[data-mask="2"] video {
+  clip-path: url(#svgMask2);
+}
+
+[data-mask="3"] video {
+  clip-path: url(#svgMask3);
+}
