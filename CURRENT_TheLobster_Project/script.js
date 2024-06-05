@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const gallery = document.getElementById("gallery");
+  const openCanvasButton = document.getElementById("openCanvasButton");
+  const closeCanvasButton = document.getElementById("closeCanvasButton");
+  const canvas = document.getElementById("canvas");
 
   const handleMouseMove = (e) => {
     if (!mouseActive) {
@@ -11,26 +14,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const { width: galleryWidth, height: galleryHeight } =
       gallery.getBoundingClientRect();
 
-    console.log(
-      `container width: ${containerWidth} gallery width: ${galleryWidth} height: ${galleryHeight}`
-    );
-    // Berücksichtigung der Galeriegröße
     const factorX = galleryWidth / containerWidth;
     const factorY = galleryHeight / containerHeight;
 
-    // Mittelpunkt der Galerie
     const centerX = galleryWidth / 2;
     const centerY = galleryHeight / 2;
 
-    // Abstand des Mauszeigers zum Mittelpunkt der Galerie
     const deltaX = (centerX - clientX) * factorX;
     const deltaY = (centerY - clientY) * factorY;
-
-    // Transformationsberechnung ((haelfte der css vh vw, ))
+    // haelfte der vw und vh verweunden
     const transformX = -150 + (deltaX / galleryWidth) * 100;
-    const transformY = -150 + (deltaY / galleryHeight) * 100;
+    const transformY = -200 + (deltaY / galleryHeight) * 100;
 
-    // Anwenden der Transformation
     gallery.style.transform = `translate(${transformX}%,${transformY}%)`;
   };
 
@@ -45,7 +40,18 @@ document.addEventListener("DOMContentLoaded", () => {
       mouseActive = false;
     }
   });
+
   container.addEventListener("mousemove", handleMouseMove);
+
+  openCanvasButton.addEventListener("click", () => {
+    canvas.style.bottom = "0";
+    openCanvasButton.style.display = "none";
+  });
+
+  closeCanvasButton.addEventListener("click", () => {
+    canvas.style.bottom = "-100%";
+    openCanvasButton.style.display = "block";
+  });
 
   return () => {
     container.removeEventListener("mousemove", handleMouseMove);
