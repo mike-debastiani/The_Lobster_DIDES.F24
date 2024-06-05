@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "MuseoSansDisplay-ExtraBlack";
+  src: url("fonts/MuseoSansDisplay-ExtraBlack.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansDisplay-Black";
+  src: url("fonts/MuseoSansDisplay-Black.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansDisplay-Light";
+  src: url("fonts/MuseoSansDisplay-Light.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansDisplay-ExtraLight";
+  src: url("fonts/MuseoSansDisplay-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansDisplay-Hairline";
+  src: url("fonts/MuseoSansDisplay-Hairline.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+  --beige-100: #f2f1e9;
+  --beige-200: #a4a297;
+  --beige-300: #d8d3bc;
+  --beige-400: #8c8871;
+  --beige-500: #494637;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: var(--beige-100);
+}
+
+.gallery {
+  width: 300vw;
+  height: 400vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 3000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: aqua;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  color: var(--beige-500);
+}
+
+.background-video {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.background-video video {
+  width: 400vw;
+  height: 500vh;
+  object-fit: cover;
+}
+
+.aspect {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: var(--beige-400);
+}
+
+#is-centre {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+#is-1 {
+  top: 0%;
+  left: 0%;
+}
+
+#is-2 {
+  top: 0%;
+  left: 100%;
+}
+
+#is-3 {
+  top: 100%;
+  left: 100%;
+}
+
+#is-4 {
+  top: 100%;
+  left: 0%;
+}
+
+#is-5 {
+  top: 20%;
+  left: 60%;
+}
+
+.open-canvas-button,
+.close-canvas-button {
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%) rotate(270deg);
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.open-canvas-button {
+  bottom: -40px;
+  padding: 5vw;
+  z-index: 100;
+}
+
+.close-canvas-button {
+  top: -40px;
+}
+
+.canvas {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #312f26;
+  transition: bottom 1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.film-title {
+  font-family: "MuseoSansDisplay-ExtraBlack";
+  font-size: 12rem;
+  color: #d8d3bc;
+  line-height: 100%;
+  letter-spacing: 0.12006rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.actor-info {
+  font-family: "MuseoSansDisplay-ExtraBlack";
+  font-size: 1.6rem;
+  color: #d8d3bc;
+  font-size: 1.699rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.sub-info {
+  font-family: "Inter", sans-serif;
+  color: #d8d3bc;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 2rem;
+  width: 63%;
+}
+
+.sub-info span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.partner-info {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.partner-info img {
+  width: 20%;
+}

@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const deltaY = (centerY - clientY) * factorY;
 
     const transformX = -150 + (deltaX / galleryWidth) * 100;
-    const transformY = -150 + (deltaY / galleryHeight) * 100;
+    const transformY = -200 + (deltaY / galleryHeight) * 100;
 
     gallery.style.transform = `translate(${transformX}%,${transformY}%)`;
   };
