@@ -61,8 +61,11 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: transform 2000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  transition: transform 3000ms cubic-bezier(0.075, 0.82, 0.165, 1);
   background-color: aqua;
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  color: var(--beige-500);
 }
 
 .background-video {
@@ -86,6 +89,13 @@ body {
   background-color: var(--beige-400);
 }
 
+#is-centre {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
 #is-1 {
   top: 0%;
   left: 0%;
@@ -107,8 +117,8 @@ body {
 }
 
 #is-5 {
-  top: 50%;
-  left: 50%;
+  top: 20%;
+  left: 60%;
 }
 
 .open-canvas-button,
