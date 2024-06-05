@@ -40,3 +40,14 @@
   top: 60%;
   left: 80%;
 }
+
+.wolf{
+  top: 60%;
+  left: 80%;
+  mix-blend-mode: multiply;
+}
+.camel{
+  top: 60%;
+  left: 80%;
+  mix-blend-mode: multiply;
+}
