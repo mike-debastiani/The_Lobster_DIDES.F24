@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Wartezeit für die Einblendungsanimation des Videos (2.5s = 0.5s Verzögerung + 2s Animation)
   setTimeout(() => {
     mouseActive = true;
-  }, 2500); // Dauer der Verzögerung und CSS Animation in ms
+  }, 5000); // Dauer der Verzögerung und CSS Animation in ms
 
   return () => {
     container.removeEventListener("mousemove", handleMouseMove);

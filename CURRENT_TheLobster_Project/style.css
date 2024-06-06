@@ -391,7 +391,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  animation: fadeIn 2s ease-in 0.5s forwards; /* 2s Animation, ease-in, 0.5s Verzögerung */
+  animation: fadeIn 4s ease-in 0.5s forwards; /* 2s Animation, ease-in, 0.5s Verzögerung */
 }
 
 /* Definition der Keyframes für die Opacity Animation */
