@@ -622,7 +622,15 @@ body {
   bottom: -40px;
   padding: 5vw;
   z-index: 100;
+  /*display: none; /* Initially hidden 
+  transition: opacity 0.5s ease; /* Smooth transition for appearance 
+  opacity: 0;*/
 }
+
+/*.open-canvas-button.visible {
+  display: block; /* Make it block to appear 
+  opacity: 1;
+}*/
 
 .close-canvas-button {
   top: -40px;

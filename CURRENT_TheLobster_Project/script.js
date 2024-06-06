@@ -118,6 +118,16 @@ addHoverEffect(".quote");
 addHoverEffect(".open-canvas-button");
 addHoverEffect(".close-canvas-button");
 
+/*document.addEventListener("DOMContentLoaded", function() {
+  // Function to make the button visible
+  function showButton() {
+    const button = document.querySelector(".open-canvas-button");
+    button.classList.add("visible");
+  }
+// Set a timeout to show the button after 8 seconds
+setTimeout(showButton, 1000);
+
+});*/
 
 //================= Hover effect audio quotes =================
 
