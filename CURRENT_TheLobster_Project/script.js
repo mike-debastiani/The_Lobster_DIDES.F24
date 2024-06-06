@@ -93,3 +93,27 @@ document.addEventListener("mousemove", function (event) {
   cursorText.style.left = event.clientX + 45 + "px"; // Adjust the horizontal position of the text
   cursorText.style.top = event.clientY + 17 + "px";
 });
+
+// Function to add hover effect
+function addHoverEffect(selector) {
+  var elements = document.querySelectorAll(selector);
+
+  elements.forEach(function (element) {
+    element.addEventListener("mouseenter", function () {
+      document
+        .querySelector(".custom-cursor")
+        .classList.add("custom-cursor-hover");
+    });
+
+    element.addEventListener("mouseleave", function () {
+      document
+        .querySelector(".custom-cursor")
+        .classList.remove("custom-cursor-hover");
+    });
+  });
+}
+
+// Add hover effect to elements with the class .quote, .open-canvas-button, and .close-canvas-button
+addHoverEffect(".quote");
+addHoverEffect(".open-canvas-button");
+addHoverEffect(".close-canvas-button");
