@@ -3,6 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const openCanvasButton = document.getElementById("openCanvasButton");
   const closeCanvasButton = document.getElementById("closeCanvasButton");
   const canvas = document.getElementById("canvas");
+  const quote4 = document.getElementById("quote-4");
+
+  let mouseActive = false;
 
   const handleMouseMove = (e) => {
     if (!mouseActive) {
@@ -22,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const deltaX = (centerX - clientX) * factorX;
     const deltaY = (centerY - clientY) * factorY;
-    // haelfte der vw und vh verweunden
+
     const transformX = -150 + (deltaX / galleryWidth) * 100;
     const transformY = -200 + (deltaY / galleryHeight) * 100;
 
@@ -30,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
   };
 
   const container = document.querySelector(".container");
-  let mouseActive = true;
 
   document.addEventListener("keypress", (e) => {
     if (e.key === "a") {
@@ -52,6 +54,14 @@ document.addEventListener("DOMContentLoaded", () => {
     canvas.style.bottom = "-100%";
     openCanvasButton.style.display = "block";
   });
+
+  // Deaktivieren der Mauspositions-Transformation bei Seitenladevorgang
+  mouseActive = false;
+
+  // Wartezeit für die Einblendungsanimation des Videos (2.5s = 0.5s Verzögerung + 2s Animation)
+  setTimeout(() => {
+    mouseActive = true;
+  }, 2500); // Dauer der Verzögerung und CSS Animation in ms
 
   return () => {
     container.removeEventListener("mousemove", handleMouseMove);
