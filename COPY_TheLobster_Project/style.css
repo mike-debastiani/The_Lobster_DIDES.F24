@@ -1,0 +1,626 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+  font-family: "MuseoSansDisplay-ExtraBlack";
+  src: url("fonts/MuseoSansDisplay-ExtraBlack.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansDisplay-Black";
+  src: url("fonts/MuseoSansDisplay-Black.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansDisplay-Light";
+  src: url("fonts/MuseoSansDisplay-Light.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansDisplay-ExtraLight";
+  src: url("fonts/MuseoSansDisplay-ExtraLight.ttf");
+}
+
+@font-face {
+  font-family: "MuseoSansDisplay-Hairline";
+  src: url("fonts/MuseoSansDisplay-Hairline.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+  --beige-100: #f2f1e9;
+  --beige-200: #a4a297;
+  --beige-300: #d8d3bc;
+  --beige-400: #8c8871;
+  --beige-500: #494637;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  background: var(--beige-100);
+}
+
+.gallery {
+  width: 300vw;
+  height: 400vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 3000ms cubic-bezier(0.075, 0.82, 0.165, 1);
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  color: var(--beige-500);
+}
+
+.background-video {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.background-video video {
+  width: 400vw;
+  height: 500vh;
+  object-fit: cover;
+}
+
+.aspect {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+
+.quote {
+  width: 20vw;
+  height: 20vw;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-txt {
+  font-family: "inter", sans-serif;
+  font-weight: 400;
+  font-size: 0.95vw;
+  position: absolute;
+}
+
+.random-animal {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  mix-blend-mode: multiply;
+}
+
+/*.is-centre {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}*/
+
+/* ================= Aspekt: Landschaft ================= */
+
+/* Positionierung gesammter Aspekt */
+.is-1 {
+  top: 9%;
+  left: 26%;
+}
+
+/* Positionierung untergeordneter Elemente */
+#wolf {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: -100%;
+  z-index: 3;
+}
+
+#landschaft-blob-1 {
+  width: 35vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -50%;
+  left: 30%;
+  z-index: 1;
+}
+
+#landschaft-blob-2 {
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -40%;
+  left: -100%;
+  z-index: 2;
+}
+
+#landschaft-blob-3 {
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 120%;
+  left: 20%;
+  z-index: 2;
+}
+
+/* ================= Quote: What animal?  ================= */
+
+#quote-1 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+}
+
+#quote-1 video {
+  width: 23vw;
+  height: auto;
+}
+
+/* ================= Quote: Wolf and penguin  ================= */
+
+#quote-2 {
+  position: absolute;
+  top: 20%;
+  left: 60%;
+}
+
+#quote-2 video {
+  width: 30vw;
+  height: auto;
+}
+
+/* ================= Aspekt: Wildnis ================= */
+
+/* Positionierung gesammter Aspekt */
+.is-2 {
+  top: 0%;
+  left: 90%;
+}
+
+/* Positionierung untergeordneter Elemente */
+#wildboar {
+  width: 35vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: -50%;
+  z-index: 3;
+}
+
+#wildnis-blob-1 {
+  width: 18vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  z-index: 2;
+}
+
+#wildnis-blob-2 {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -50%;
+  left: -130%;
+  z-index: 2;
+}
+
+#wildnis-blob-3 {
+  width: 22vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  z-index: 2;
+}
+
+/* ================= Quote: turn into an animal  ================= */
+
+#quote-3 {
+  position: absolute;
+  top: 30%;
+  left: 90%;
+}
+
+#quote-3 video {
+  width: 30vw;
+  height: auto;
+}
+
+/* ================= Random Animal: Peacock  ================= */
+
+#rndm-animal-1 {
+  top: 41%;
+  left: 73%;
+  position: absolute;
+}
+
+#rndm-animal-1 img {
+  width: 40vw;
+  height: auto;
+}
+
+/* ================= Aspekt: Brutalität ================= */
+
+/* Positionierung gesammter Aspekt */
+.is-3 {
+  top: 62%;
+  left: 97%;
+}
+
+/* Positionierung untergeordneter Elemente */
+#bunny {
+  width: 25vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 60%;
+  left: -35%;
+  z-index: 3;
+}
+
+#donkey {
+  width: 50vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 280%;
+  left: -20%;
+  z-index: 3;
+}
+
+#brutalitaet-blob-1 {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -59%;
+  left: -158%;
+  z-index: 2;
+}
+
+#brutalitaet-blob-2 {
+  width: 15vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  z-index: 2;
+}
+
+#brutalitaet-blob-3 {
+  width: 35vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -90%;
+  left: -5%;
+  z-index: 2;
+}
+
+#brutalitaet-blob-4 {
+  width: 35vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 280%;
+  left: -332%;
+  z-index: 2;
+}
+
+#brutalitaet-blob-6 {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 145%;
+  left: -191%;
+  z-index: 1;
+}
+
+#brutalitaet-blob-7 {
+  width: 25vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 142%;
+  left: -45%;
+  z-index: 1;
+}
+
+#brutalitaet-blob-8 {
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 280%;
+  left: -100%;
+  z-index: 1;
+}
+
+/* ================= Random Animal: Camel  ================= */
+
+#rndm-animal-2 {
+  top: 71%;
+  left: 67%;
+  position: absolute;
+}
+
+#rndm-animal-2 img {
+  width: 40vw;
+  height: auto;
+}
+
+/* ================= Quote: Thought of what animal?  ================= */
+
+#quote-4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+#quote-4 video {
+  width: 25vw;
+  height: auto;
+}
+
+/* ================= Aspekt: Obszönität ================= */
+
+/* Positionierung gesammter Aspekt */
+.is-4 {
+  top: 80%;
+  left: 30%;
+}
+/* Positionierung untergeordneter Elemente */
+#pony {
+  width: 33vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+#obszoen-blob-1 {
+  width: 35vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -45%;
+  left: -60%;
+  z-index: 2;
+}
+
+#quote-5 {
+  position: absolute;
+  top: 10%;
+  left: 180%;
+}
+
+#quote-5 video {
+  width: 20vw;
+  height: auto;
+}
+
+#quote-6 {
+  position: absolute;
+  top: -65%;
+  left: -20%;
+  z-index: 2;
+}
+
+#quote-6 video {
+  width: 25vw;
+  height: auto;
+}
+
+#quote-7 {
+  position: absolute;
+  top: 100%;
+  left: 270%;
+  z-index: 2;
+}
+
+#quote-7 video {
+  width: 21vw;
+  height: auto;
+}
+
+#quote-8 {
+  position: absolute;
+  top: 210%;
+  left: 190%;
+  z-index: 2;
+}
+
+#quote-8 video {
+  width: 31vw;
+  height: auto;
+}
+
+/* ================= Aspekt: Einsamkeit ================= */
+
+/* Positionierung gesammter Aspekt */
+.is-5 {
+  top: 35%;
+  left: 5%;
+}
+
+/* Positionierung untergeordneter Elemente */
+#einsamkeit-blob-1 {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  z-index: 2;
+}
+
+#quote-9 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  z-index: 2;
+}
+
+#quote-9 video {
+  width: 30vw;
+  height: auto;
+}
+
+#einsamkeit-blob-2 {
+  width: 21vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -30%;
+  left: 200%;
+  z-index: 2;
+}
+
+#einsamkeit-blob-3 {
+  width: 40vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: -170%;
+  z-index: 1;
+}
+
+#quote-10 {
+  position: absolute;
+  top: 210%;
+  left: 50%;
+  z-index: 2;
+}
+
+#quote-10 video {
+  width: 26vw;
+  height: auto;
+}
+
+/* ================= Canvas Button ================= */
+
+.open-canvas-button,
+.close-canvas-button {
+  position: absolute;
+  width: 10vw;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%) rotate(270deg);
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.open-canvas-button {
+  bottom: -40px;
+  padding: 5vw;
+  z-index: 100;
+}
+
+.close-canvas-button {
+  top: -40px;
+}
+
+/* ================= Film Info Canvas ================= */
+
+.canvas {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #312f26;
+  transition: bottom 1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.film-title {
+  font-family: "MuseoSansDisplay-ExtraBlack";
+  font-size: 12rem;
+  color: #d8d3bc;
+  line-height: 100%;
+  letter-spacing: 0.12006rem;
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+.actor-info {
+  font-family: "MuseoSansDisplay-ExtraBlack";
+  font-size: 1.6rem;
+  color: #d8d3bc;
+  font-size: 1.699rem;
+  line-height: 100%;
+  text-transform: uppercase;
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0.5rem 1rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.sub-info {
+  font-family: "Inter", sans-serif;
+  color: #d8d3bc;
+  text-align: center;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin-top: 2rem;
+  width: 63%;
+}
+
+.sub-info span {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.partner-info {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.partner-info img {
+  width: 20%;
+}
