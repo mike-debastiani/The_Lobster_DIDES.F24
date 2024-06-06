@@ -124,8 +124,8 @@ body {
 
 /* Positionierung gesammter Aspekt */
 .is-1 {
-  top: 0%;
-  left: 15%;
+  top: 9%;
+  left: 26%;
 }
 
 /* Positionierung untergeordneter Elemente */
@@ -140,13 +140,13 @@ body {
 }
 
 #landschaft-blob-1 {
-  width: 20vw;
+  width: 35vw;
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: 120%;
-  left: 20%;
-  z-index: 2;
+  top: -50%;
+  left: 30%;
+  z-index: 1;
 }
 
 #landschaft-blob-2 {
@@ -160,13 +160,13 @@ body {
 }
 
 #landschaft-blob-3 {
-  width: 35vw;
+  width: 20vw;
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: -50%;
-  left: 30%;
-  z-index: 1;
+  top: 120%;
+  left: 20%;
+  z-index: 2;
 }
 
 /* ================= Quote: What animal?  ================= */
@@ -186,8 +186,8 @@ body {
 
 #quote-2 {
   position: absolute;
-  top: 15%;
-  left: 57%;
+  top: 20%;
+  left: 60%;
 }
 
 #quote-2 video {
@@ -260,8 +260,8 @@ body {
 /* ================= Random Animal: Peacock  ================= */
 
 #rndm-animal-1 {
-  top: 37%;
-  left: 82%;
+  top: 41%;
+  left: 69%;
   position: absolute;
 }
 
@@ -274,8 +274,8 @@ body {
 
 /* Positionierung gesammter Aspekt */
 .is-3 {
-  top: 70%;
-  left: 100%;
+  top: 62%;
+  left: 97%;
 }
 
 /* Positionierung untergeordneter Elemente */
@@ -304,8 +304,8 @@ body {
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: 0%;
-  left: -150%;
+  top: -59%;
+  left: -158%;
   z-index: 2;
 }
 
@@ -335,7 +335,7 @@ body {
   object-fit: cover;
   position: absolute;
   top: 280%;
-  left: -280%;
+  left: -332%;
   z-index: 2;
 }
 
@@ -344,8 +344,8 @@ body {
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: 140%;
-  left: -200%;
+  top: 145%;
+  left: -191%;
   z-index: 1;
 }
 
@@ -372,8 +372,8 @@ body {
 /* ================= Random Animal: Camel  ================= */
 
 #rndm-animal-2 {
-  top: 66%;
-  left: 66%;
+  top: 64%;
+  left: 65%;
   position: absolute;
 }
 
@@ -386,8 +386,8 @@ body {
 
 #quote-4 {
   position: absolute;
-  top: 75%;
-  left: 58%;
+  top: 54%;
+  left: 40%;
 }
 
 #quote-4 video {
