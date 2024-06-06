@@ -64,7 +64,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 5000); // Dauer der Verzögerung und CSS Animation in ms
 
   // Hinzufügen des Soundeffekts beim Überfahren von Videos
-  const videos = document.querySelectorAll("video");
+  /*const videos = document.querySelectorAll("video");
 
   videos.forEach((video) => {
     video.addEventListener("mouseenter", function () {
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", () => {
       this.muted = true;
       this.pause();
     });
-  });
+  });*/
 
   return () => {
     container.removeEventListener("mousemove", handleMouseMove);
@@ -117,3 +117,44 @@ function addHoverEffect(selector) {
 addHoverEffect(".quote");
 addHoverEffect(".open-canvas-button");
 addHoverEffect(".close-canvas-button");
+
+
+//================= Hover effect audio quotes =================
+
+document.addEventListener("DOMContentLoaded", function() {
+  function setupHoverSound(quoteId, audioId) {
+    var quote = document.getElementById(quoteId);
+    var hoverSound = document.getElementById(audioId);
+
+    quote.addEventListener("mouseenter", function() {
+      hoverSound.currentTime = 0; // Reset audio to the beginning
+      hoverSound.play();
+    });
+
+    quote.addEventListener("mouseleave", function() {
+      hoverSound.pause();
+      hoverSound.currentTime = 0; // Reset audio to the beginning
+    });
+  }
+
+  // Setup hover sound for all quotes 
+  setupHoverSound("quote-1", "hover-sound-1");
+
+  setupHoverSound("quote-2", "hover-sound-2");
+
+  setupHoverSound("quote-3", "hover-sound-3");
+
+  setupHoverSound("quote-4", "hover-sound-4");
+
+  setupHoverSound("quote-5", "hover-sound-5");
+
+  setupHoverSound("quote-6", "hover-sound-6");
+
+  setupHoverSound("quote-7", "hover-sound-7");
+
+  setupHoverSound("quote-8", "hover-sound-8");
+
+  setupHoverSound("quote-9", "hover-sound-9");
+
+  setupHoverSound("quote-10", "hover-sound-10");
+});
