@@ -29,6 +29,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  cursor: none;
 }
 
 html,
@@ -59,14 +60,22 @@ body {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  /*border: 3.5px solid #f2f1e9;*/
   background-color: #d8d3bc;
+  border: 3px solid #d8d3bc00;
   text-align: right;
-  text-indent: 45px; /*Position des Click Textes
-  mix-blend-mode: difference;*/
+  text-indent: 45px; /* Position des Click Textes */
   position: fixed;
   pointer-events: none;
   z-index: 9999;
+  mix-blend-mode: luminosity;
+  transition: width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.custom-cursor-hover {
+  width: 35px;
+  height: 35px;
+  background-color: #f2f1e900;
+  border: 3px solid #d8d3bc;
 }
 
 .gallery {
@@ -604,7 +613,7 @@ body {
   height: auto;
   left: 50%;
   transform: translateX(-50%) rotate(270deg);
-  cursor: pointer;
+  cursor: none;
   transition: transform 0.3s ease; /* Smooth transition for hover effect */
 }
 
