@@ -131,23 +131,23 @@ setTimeout(showButton, 1000);
 
 //================= Hover effect audio quotes =================
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   function setupHoverSound(quoteId, audioId) {
     var quote = document.getElementById(quoteId);
     var hoverSound = document.getElementById(audioId);
 
-    quote.addEventListener("mouseenter", function() {
+    quote.addEventListener("mouseenter", function () {
       hoverSound.currentTime = 0; // Reset audio to the beginning
       hoverSound.play();
     });
 
-    quote.addEventListener("mouseleave", function() {
+    quote.addEventListener("mouseleave", function () {
       hoverSound.pause();
       hoverSound.currentTime = 0; // Reset audio to the beginning
     });
   }
 
-  // Setup hover sound for all quotes 
+  // Setup hover sound for all quotes
   setupHoverSound("quote-1", "hover-sound-1");
 
   setupHoverSound("quote-2", "hover-sound-2");
