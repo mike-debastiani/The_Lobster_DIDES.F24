@@ -147,6 +147,7 @@ body {
   top: -50%;
   left: 30%;
   z-index: 1;
+  animation: fadeInOut 10s infinite;
 }
 
 #landschaft-blob-2 {
@@ -157,6 +158,8 @@ body {
   top: -40%;
   left: -100%;
   z-index: 2;
+  animation: fadeInOut 10s infinite;
+  animation-delay: 5s;
 }
 
 #landschaft-blob-3 {
@@ -167,6 +170,17 @@ body {
   top: 120%;
   left: 20%;
   z-index: 2;
+  animation: fadeInOut 10s infinite;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
 }
 
 /* ================= Quote: What animal?  ================= */
