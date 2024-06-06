@@ -124,8 +124,8 @@ body {
 
 /* Positionierung gesammter Aspekt */
 .is-1 {
-  top: 5%;
-  left: 0%;
+  top: 0%;
+  left: 15%;
 }
 
 /* Positionierung untergeordneter Elemente */
@@ -174,7 +174,7 @@ body {
 #quote-1 {
   position: absolute;
   top: 0%;
-  left: 33%;
+  left: 50%;
 }
 
 #quote-1 video {
@@ -187,7 +187,7 @@ body {
 #quote-2 {
   position: absolute;
   top: 15%;
-  left: 40%;
+  left: 57%;
 }
 
 #quote-2 video {
@@ -274,18 +274,28 @@ body {
 
 /* Positionierung gesammter Aspekt */
 .is-3 {
-  top: 80%;
-  left: 80%;
+  top: 70%;
+  left: 100%;
 }
 
 /* Positionierung untergeordneter Elemente */
 #bunny {
-  width: 30vw;
+  width: 25vw;
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: 50%;
-  left: -50%;
+  top: 60%;
+  left: -35%;
+  z-index: 3;
+}
+
+#donkey {
+  width: 50vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 280%;
+  left: -20%;
   z-index: 3;
 }
 
@@ -304,7 +314,7 @@ body {
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: 90%;
+  top: 85%;
   left: 75%;
   z-index: 2;
 }
@@ -324,20 +334,206 @@ body {
   height: auto;
   object-fit: cover;
   position: absolute;
-  top: -90%;
-  left: -5%;
+  top: 280%;
+  left: -280%;
   z-index: 2;
 }
 
-.is-4 {
-  top: 100%;
-  left: 0%;
+#brutalitaet-blob-6 {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 140%;
+  left: -200%;
+  z-index: 1;
 }
 
-.is-5 {
-  top: 20%;
-  left: 60%;
+#brutalitaet-blob-7 {
+  width: 25vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 142%;
+  left: -45%;
+  z-index: 1;
 }
+
+#brutalitaet-blob-8 {
+  width: 20vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 280%;
+  left: -100%;
+  z-index: 1;
+}
+
+/* ================= Random Animal: Camel  ================= */
+
+#rndm-animal-2 {
+  top: 66%;
+  left: 66%;
+  position: absolute;
+}
+
+#rndm-animal-2 img {
+  width: 40vw;
+  height: auto;
+}
+
+/* ================= Quote: Thought of what animal?  ================= */
+
+#quote-4 {
+  position: absolute;
+  top: 75%;
+  left: 58%;
+}
+
+#quote-4 video {
+  width: 25vw;
+  height: auto;
+}
+
+/* ================= Aspekt: Obszönität ================= */
+
+/* Positionierung gesammter Aspekt */
+.is-4 {
+  top: 80%;
+  left: 30%;
+}
+/* Positionierung untergeordneter Elemente */
+#pony {
+  width: 33vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 3;
+}
+
+#obszoen-blob-1 {
+  width: 35vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -45%;
+  left: -60%;
+  z-index: 2;
+}
+
+#quote-5 {
+  position: absolute;
+  top: 10%;
+  left: 180%;
+}
+
+#quote-5 video {
+  width: 20vw;
+  height: auto;
+}
+
+#quote-6 {
+  position: absolute;
+  top: -65%;
+  left: -20%;
+  z-index: 2;
+}
+
+#quote-6 video {
+  width: 25vw;
+  height: auto;
+}
+
+#quote-7 {
+  position: absolute;
+  top: 100%;
+  left: 270%;
+  z-index: 2;
+}
+
+#quote-7 video {
+  width: 21vw;
+  height: auto;
+}
+
+#quote-8 {
+  position: absolute;
+  top: 210%;
+  left: 190%;
+  z-index: 2;
+}
+
+#quote-8 video {
+  width: 31vw;
+  height: auto;
+}
+
+/* ================= Aspekt: Einsamkeit ================= */
+
+/* Positionierung gesammter Aspekt */
+.is-5 {
+  top: 35%;
+  left: 5%;
+}
+
+/* Positionierung untergeordneter Elemente */
+#einsamkeit-blob-1 {
+  width: 30vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 0%;
+  left: 60%;
+  z-index: 2;
+}
+
+#quote-9 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  z-index: 2;
+}
+
+#quote-9 video {
+  width: 30vw;
+  height: auto;
+}
+
+#einsamkeit-blob-2 {
+  width: 21vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: -30%;
+  left: 200%;
+  z-index: 2;
+}
+
+#einsamkeit-blob-3 {
+  width: 40vw;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: -170%;
+  z-index: 1;
+}
+
+#quote-10 {
+  position: absolute;
+  top: 210%;
+  left: 50%;
+  z-index: 2;
+}
+
+#quote-10 video {
+  width: 26vw;
+  height: auto;
+}
+
+/* ================= Canvas Button ================= */
 
 .open-canvas-button,
 .close-canvas-button {
@@ -359,6 +555,8 @@ body {
 .close-canvas-button {
   top: -40px;
 }
+
+/* ================= Film Info Canvas ================= */
 
 .canvas {
   position: fixed;
