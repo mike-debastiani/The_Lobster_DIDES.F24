@@ -113,12 +113,12 @@ body {
   mix-blend-mode: multiply;
 }
 
-.is-centre {
+/*.is-centre {
   top: 50%;
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-}
+}*/
 
 /* ================= Aspekt: Landschaft ================= */
 
@@ -261,7 +261,7 @@ body {
 
 #rndm-animal-1 {
   top: 41%;
-  left: 69%;
+  left: 73%;
   position: absolute;
 }
 
@@ -372,8 +372,8 @@ body {
 /* ================= Random Animal: Camel  ================= */
 
 #rndm-animal-2 {
-  top: 64%;
-  left: 65%;
+  top: 71%;
+  left: 67%;
   position: absolute;
 }
 
@@ -386,8 +386,8 @@ body {
 
 #quote-4 {
   position: absolute;
-  top: 54%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
 }
 
 #quote-4 video {
